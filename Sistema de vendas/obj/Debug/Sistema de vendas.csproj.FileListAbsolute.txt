@@ -1,0 +1,10 @@
+C:\Users\higor\Documents\GitHub\SistemaVendasDepositoDeBebidas\Sistema de vendas\bin\Debug\Sistema de vendas.exe.config
+C:\Users\higor\Documents\GitHub\SistemaVendasDepositoDeBebidas\Sistema de vendas\bin\Debug\Sistema de vendas.exe
+C:\Users\higor\Documents\GitHub\SistemaVendasDepositoDeBebidas\Sistema de vendas\bin\Debug\Sistema de vendas.pdb
+C:\Users\higor\Documents\GitHub\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema de vendas.csprojAssemblyReference.cache
+C:\Users\higor\Documents\GitHub\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema_de_vendas.Properties.Resources.resources
+C:\Users\higor\Documents\GitHub\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema de vendas.csproj.GenerateResource.cache
+C:\Users\higor\Documents\GitHub\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema de vendas.csproj.CoreCompileInputs.cache
+C:\Users\higor\Documents\GitHub\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema de vendas.exe
+C:\Users\higor\Documents\GitHub\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema de vendas.pdb
+C:\Users\higor\Documents\GitHub\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema_de_vendas.Form1.resources
