@@ -1,4 +1,4 @@
-# Sistema de Vendas para Deposito deBebidas
+# Sistema de Vendas para Deposito de Bebidas
 ## Descrição
 sistema de vendas para depósito de bebidas integrado com controle de fornecedores, rastreamento de carga, Controle de estoque e sistema leva e traz. 
 
