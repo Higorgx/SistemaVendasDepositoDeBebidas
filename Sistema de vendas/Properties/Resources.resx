@@ -124,4 +124,10 @@
   <data name="rc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Src\Images\rc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Src\Images\hv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="st" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Src\Images\st.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
