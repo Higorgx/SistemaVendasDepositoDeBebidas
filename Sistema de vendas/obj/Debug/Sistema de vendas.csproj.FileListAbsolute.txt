@@ -67,3 +67,4 @@ C:\Users\higor\Documents\GitHub\SistemaVendasDepositoDeBebidas\Sistema de vendas
 C:\Users\higor\Documents\GitHub\SistemaVendasDepositoDeBebidas\Sistema de vendas\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\higor\Documents\GitHub\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema de vendas.csproj.CopyComplete
 C:\Users\higor\Documents\GitHub\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema_de_vendas.Telas.Cad.resources
+C:\Users\thiago\Source\Repos\Higorgx\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema_de_vendas.Telas.Cad.resources
