@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sistema_de_vendas.Telas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,14 +20,15 @@ namespace Sistema_de_vendas
 
         private void btn_sair_Click(object sender, EventArgs e)
         {
-           
+            Cad newCad = new Cad();
+            newCad.ShowDialog();
         }
 
         private void btn_sair_Click_1(object sender, EventArgs e)
         {
             InitializeComponent();
 
-            if (MessageBox.Show("Deseja Fechar?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            if (MessageBox.Show("Deseja Fechar?", "Fechar", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
                 this.Close();
         }
 
