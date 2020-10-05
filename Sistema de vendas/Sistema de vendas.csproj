@@ -144,6 +144,8 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Src\Images\aa.png" />
+    <None Include="Src\Images\st.png" />
+    <None Include="Src\Images\hv.png" />
     <None Include="Src\Images\rc.png" />
     <None Include="Src\Images\ua.png" />
   </ItemGroup>
