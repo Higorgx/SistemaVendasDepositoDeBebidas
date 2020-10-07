@@ -46,5 +46,10 @@ namespace Sistema_de_vendas
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new CadFornecedores().ShowDialog();
+        }
     }
 }
