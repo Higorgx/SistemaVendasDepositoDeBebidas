@@ -63,6 +63,26 @@ namespace Sistema_de_vendas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ac {
+            get {
+                object obj = ResourceManager.GetObject("ac", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cc {
+            get {
+                object obj = ResourceManager.GetObject("cc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cf {
             get {
                 object obj = ResourceManager.GetObject("cf", resourceCulture);
@@ -76,6 +96,16 @@ namespace Sistema_de_vendas.Properties {
         internal static System.Drawing.Bitmap hv {
             get {
                 object obj = ResourceManager.GetObject("hv", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pf {
+            get {
+                object obj = ResourceManager.GetObject("pf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
