@@ -74,5 +74,11 @@ namespace Sistema_de_vendas.Telas
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja Fechar?", "Fechar", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+                this.Close();
+        }
     }
 }
