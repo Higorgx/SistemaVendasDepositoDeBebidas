@@ -41,9 +41,9 @@ namespace Sistema_de_vendas
 
         private void label2_Click(object sender, EventArgs e)
         {
-          
             
-             
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -63,7 +63,8 @@ namespace Sistema_de_vendas
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-
+            groupBox1.Visible = true;
+            groupBox1.Enabled = true;
         }
     }
 }
