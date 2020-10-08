@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Sistema_de_vendas.DAO;
+using Sistema_de_vendas.Modelos;
 
 namespace Sistema_de_vendas
 {
@@ -39,7 +41,9 @@ namespace Sistema_de_vendas
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+          
+            
+             
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -53,6 +57,11 @@ namespace Sistema_de_vendas
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_login_Click(object sender, EventArgs e)
         {
 
         }

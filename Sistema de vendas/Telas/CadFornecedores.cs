@@ -69,5 +69,10 @@ namespace Sistema_de_vendas.Telas
                     $"CNPJ: {empresa.Cnpj}");
             }
         }
+
+        private void CadFornecedores_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

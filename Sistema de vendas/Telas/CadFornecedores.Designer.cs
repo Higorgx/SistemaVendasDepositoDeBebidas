@@ -181,6 +181,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "CadFornecedores";
             this.Text = "Cadastro de Fornecedores";
+            this.Load += new System.EventHandler(this.CadFornecedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
