@@ -17,8 +17,11 @@ namespace Sistema_de_vendas
         [STAThread]
         static void Main()
         {
+            UsuarioDao.resetarTabela();
             FornecedorDao.resetarTabela();
             FornecedorDao.criarTabela();
+            UsuarioDao.criarTabela();
+            
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

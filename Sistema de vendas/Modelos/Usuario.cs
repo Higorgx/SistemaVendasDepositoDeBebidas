@@ -30,5 +30,10 @@ namespace Sistema_de_vendas.Modelos
         public string Login { get => login; set => login = value; }
         public string Senha { get => senha; set => senha = value; }
         public int Id { get => id; set => id = value; }
+        public bool validar()
+        {
+            return this.id != null
+                && this.login != "" && this.senha != "" ;
+        }
     }
 }

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_confirmasenha = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_senha = new System.Windows.Forms.TextBox();
+            this.txt_email = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.labellogin = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -50,13 +50,13 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox3
+            // txt_confirmasenha
             // 
-            this.textBox3.Location = new System.Drawing.Point(438, 147);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(231, 20);
-            this.textBox3.TabIndex = 18;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txt_confirmasenha.Location = new System.Drawing.Point(438, 147);
+            this.txt_confirmasenha.Name = "txt_confirmasenha";
+            this.txt_confirmasenha.Size = new System.Drawing.Size(231, 20);
+            this.txt_confirmasenha.TabIndex = 18;
+            this.txt_confirmasenha.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label2
             // 
@@ -79,21 +79,21 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // txt_senha
             // 
-            this.textBox2.Location = new System.Drawing.Point(438, 102);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(231, 20);
-            this.textBox2.TabIndex = 15;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txt_senha.Location = new System.Drawing.Point(438, 102);
+            this.txt_senha.Name = "txt_senha";
+            this.txt_senha.Size = new System.Drawing.Size(231, 20);
+            this.txt_senha.TabIndex = 15;
+            this.txt_senha.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox1
+            // txt_email
             // 
-            this.textBox1.Location = new System.Drawing.Point(438, 54);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 20);
-            this.textBox1.TabIndex = 14;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txt_email.Location = new System.Drawing.Point(438, 54);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(231, 20);
+            this.txt_email.TabIndex = 14;
+            this.txt_email.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -135,11 +135,11 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(884, 218);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt_confirmasenha);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_senha);
+            this.Controls.Add(this.txt_email);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labellogin);
             this.Controls.Add(this.pictureBox1);
@@ -156,11 +156,11 @@
         #endregion
 
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_confirmasenha;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_senha;
+        private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labellogin;
         private System.Windows.Forms.PictureBox pictureBox1;

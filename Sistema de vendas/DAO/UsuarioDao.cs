@@ -50,7 +50,6 @@ namespace Sistema_de_vendas.DAO
             while (resultado.Read())
             {
                 usuarios.Add(new Usuario(
-                    resultado.GetInt32(0), //id
                     resultado.GetString(1), //login
                     resultado.GetString(2) //senha
                 ));
