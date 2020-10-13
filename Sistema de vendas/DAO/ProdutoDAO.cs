@@ -83,7 +83,7 @@ namespace Sistema_de_vendas.DAO
             comando.Dispose();
         }
 
-        public static List<Usuario> retornarTudo()
+        public static List<Produto> retornarTudo()
         {
             //abertura do comando sql
             var comando = conexão.CreateCommand();
@@ -94,12 +94,12 @@ namespace Sistema_de_vendas.DAO
             // execução do comando
             var resultado = comando.ExecuteReader();
 
-            List<Produto> usuarios = new List<Produto>();
+            List<Produto> Produto = new List<Produto>();
 
             // adicionando dados da consulta a lista
             while (resultado.Read())
             {
-                usuarios.Add(new Produto(
+                Produto.Add(new Produto(
                     resultado.GetInt32(0), 
                     resultado.GetString(1),
                     resultado.GetString(2),
@@ -113,7 +113,7 @@ namespace Sistema_de_vendas.DAO
             comando.Dispose();
             resultado.Dispose();
 
-            return usuarios;
+            return Produto;
         }
 
         public static void salvar(Usuario usuario)
