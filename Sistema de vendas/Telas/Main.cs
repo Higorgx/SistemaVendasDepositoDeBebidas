@@ -66,5 +66,10 @@ namespace Sistema_de_vendas
             groupBox1.Visible = true;
             groupBox1.Enabled = true;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new ContEstoque().ShowDialog();
+        }
     }
 }

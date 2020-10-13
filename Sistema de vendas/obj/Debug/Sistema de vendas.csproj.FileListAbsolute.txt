@@ -70,3 +70,4 @@ C:\Users\higor\Documents\GitHub\SistemaVendasDepositoDeBebidas\Sistema de vendas
 C:\Users\thiago\Source\Repos\Higorgx\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema_de_vendas.Telas.Cad.resources
 C:\Users\thiago\Source\Repos\Higorgx\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema_de_vendas.Telas.CadFornecedores.resources
 C:\Users\higor\Documents\GitHub\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema_de_vendas.Telas.CadFornecedores.resources
+C:\Users\higor\Documents\GitHub\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema_de_vendas.Telas.ContEstoque.resources
