@@ -143,7 +143,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labellogin);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Cad";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Cad_Load);

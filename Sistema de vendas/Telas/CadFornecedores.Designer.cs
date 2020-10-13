@@ -190,7 +190,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Cursor = System.Windows.Forms.Cursors.NoMove2D;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CadFornecedores";
             this.Text = "Cadastro de Fornecedores";
             this.Load += new System.EventHandler(this.CadFornecedores_Load);

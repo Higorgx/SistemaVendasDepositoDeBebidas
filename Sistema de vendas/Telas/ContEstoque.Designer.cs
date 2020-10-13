@@ -60,7 +60,6 @@
             this.ClientSize = new System.Drawing.Size(828, 567);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ContEstoque";
             this.Text = "ContEstoque";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
