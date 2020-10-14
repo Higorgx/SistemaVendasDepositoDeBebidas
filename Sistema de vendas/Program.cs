@@ -20,10 +20,12 @@ namespace Sistema_de_vendas
             ProdutosDao.resetarTabela();
             UsuarioDao.resetarTabela();
             FornecedorDao.resetarTabela();
+
             FornecedorDao.criarTabela();
             UsuarioDao.criarTabela();
             ProdutosDao.criarTabela();
-            
+
+            UsuarioDao.salvar(new Usuario("adm", "adm"));
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
