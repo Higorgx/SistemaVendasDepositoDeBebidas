@@ -72,7 +72,7 @@ namespace Sistema_de_vendas
                 }
                 else
                 {
-                    new Exception();
+                    throw new Exception();
                 }
             }
             catch (Exception)
