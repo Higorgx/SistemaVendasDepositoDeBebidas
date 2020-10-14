@@ -101,6 +101,12 @@
     <Compile Include="Modelos\Fornecedor.cs" />
     <Compile Include="Modelos\Produto.cs" />
     <Compile Include="Modelos\Usuario.cs" />
+    <Compile Include="Telas\AnaComercial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\AnaComercial.Designer.cs">
+      <DependentUpon>AnaComercial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\CadFornecedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,24 @@
     </Compile>
     <Compile Include="Telas\ContEstoque.Designer.cs">
       <DependentUpon>ContEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ListClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ListClientes.Designer.cs">
+      <DependentUpon>ListClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ListFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ListFornecedores.Designer.cs">
+      <DependentUpon>ListFornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\ListVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ListVendas.Designer.cs">
+      <DependentUpon>ListVendas.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Main.cs">
       <SubType>Form</SubType>
@@ -137,11 +161,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Telas\AnaComercial.resx">
+      <DependentUpon>AnaComercial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\CadFornecedores.resx">
       <DependentUpon>CadFornecedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\ContEstoque.resx">
       <DependentUpon>ContEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ListClientes.resx">
+      <DependentUpon>ListClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ListFornecedores.resx">
+      <DependentUpon>ListFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ListVendas.resx">
+      <DependentUpon>ListVendas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

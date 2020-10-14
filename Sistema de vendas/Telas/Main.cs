@@ -71,5 +71,16 @@ namespace Sistema_de_vendas
         {
             new ContEstoque().ShowDialog();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        /* Chama tela para Análise Comercial */
+        private void button9_Click(object sender, EventArgs e)
+        {
+            new AnaComercial().ShowDialog();
+        }
     }
 }
