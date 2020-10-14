@@ -79,6 +79,12 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Qtd",
+            "Cliente",
+            "Produto",
+            "Preço",
+            "Valor"});
             this.comboBox1.Location = new System.Drawing.Point(12, 444);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
