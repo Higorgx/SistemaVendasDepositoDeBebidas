@@ -117,4 +117,3 @@ C:\Users\thiago\Source\Repos\Higorgx\SistemaVendasDepositoDeBebidas\Sistema de v
 C:\Users\thiago\Source\Repos\Higorgx\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema_de_vendas.Telas.ListClientes.resources
 C:\Users\thiago\Source\Repos\Higorgx\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema_de_vendas.Telas.ListFornecedores.resources
 C:\Users\thiago\Source\Repos\Higorgx\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema_de_vendas.Telas.ListVendas.resources
-C:\Users\thiago\Source\Repos\Higorgx\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema_de_vendas.Telas.HistoricoDeVendas.resources
