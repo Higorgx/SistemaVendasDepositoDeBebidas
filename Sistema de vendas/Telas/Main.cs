@@ -48,7 +48,7 @@ namespace Sistema_de_vendas
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            new HistoricoDeVendas().ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -63,8 +63,21 @@ namespace Sistema_de_vendas
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            groupBox1.Visible = true;
-            groupBox1.Enabled = true;
+            try
+            {
+                if(UsuarioDao.buscar($"login = '{txt_login.Text}'")[0].Senha == txt_senha.Text)
+                {
+                    groupBox1.Visible = true;
+                    groupBox1.Enabled = true;
+                } else
+                {
+                    throw new Exception();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Senha ou login incorretos!");
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
