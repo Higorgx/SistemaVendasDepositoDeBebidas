@@ -16,5 +16,10 @@ namespace Sistema_de_vendas.Telas
         {
             InitializeComponent();
         }
+
+        private void listCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

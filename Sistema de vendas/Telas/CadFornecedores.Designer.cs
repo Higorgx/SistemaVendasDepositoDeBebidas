@@ -137,6 +137,7 @@
             this.lista.Name = "lista";
             this.lista.Size = new System.Drawing.Size(171, 199);
             this.lista.TabIndex = 18;
+            this.lista.SelectedIndexChanged += new System.EventHandler(this.lista_SelectedIndexChanged);
             // 
             // button2
             // 

@@ -30,9 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.ListFornecedor = new System.Windows.Forms.Button();
-            this.ListCliente = new System.Windows.Forms.Button();
             this.ListVenda = new System.Windows.Forms.Button();
+            this.ListCliente = new System.Windows.Forms.Button();
+            this.ListFornecedor = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,15 +61,15 @@
             this.groupBox1.Text = "Selecione uma das opções";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // ListFornecedor
+            // ListVenda
             // 
-            this.ListFornecedor.Location = new System.Drawing.Point(59, 35);
-            this.ListFornecedor.Name = "ListFornecedor";
-            this.ListFornecedor.Size = new System.Drawing.Size(269, 23);
-            this.ListFornecedor.TabIndex = 0;
-            this.ListFornecedor.Text = "Lista Fornecedores";
-            this.ListFornecedor.UseVisualStyleBackColor = true;
-            this.ListFornecedor.Click += new System.EventHandler(this.ListFornecedor_Click);
+            this.ListVenda.Location = new System.Drawing.Point(59, 111);
+            this.ListVenda.Name = "ListVenda";
+            this.ListVenda.Size = new System.Drawing.Size(269, 23);
+            this.ListVenda.TabIndex = 2;
+            this.ListVenda.Text = "Estatistica Vendas";
+            this.ListVenda.UseVisualStyleBackColor = true;
+            this.ListVenda.Click += new System.EventHandler(this.ListVenda_Click);
             // 
             // ListCliente
             // 
@@ -81,15 +81,15 @@
             this.ListCliente.UseVisualStyleBackColor = true;
             this.ListCliente.Click += new System.EventHandler(this.ListCliente_Click);
             // 
-            // ListVenda
+            // ListFornecedor
             // 
-            this.ListVenda.Location = new System.Drawing.Point(59, 111);
-            this.ListVenda.Name = "ListVenda";
-            this.ListVenda.Size = new System.Drawing.Size(269, 23);
-            this.ListVenda.TabIndex = 2;
-            this.ListVenda.Text = "Lista Vendas";
-            this.ListVenda.UseVisualStyleBackColor = true;
-            this.ListVenda.Click += new System.EventHandler(this.ListVenda_Click);
+            this.ListFornecedor.Location = new System.Drawing.Point(59, 35);
+            this.ListFornecedor.Name = "ListFornecedor";
+            this.ListFornecedor.Size = new System.Drawing.Size(269, 23);
+            this.ListFornecedor.TabIndex = 0;
+            this.ListFornecedor.Text = "Lista Fornecedores";
+            this.ListFornecedor.UseVisualStyleBackColor = true;
+            this.ListFornecedor.Click += new System.EventHandler(this.ListFornecedor_Click);
             // 
             // AnaComercial
             // 

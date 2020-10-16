@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.listVenda = new System.Windows.Forms.ListBox();
             this.valorTotVendas = new System.Windows.Forms.TextBox();
             this.totVendas = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.listVenda = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // label1
@@ -45,14 +45,6 @@
             this.label1.Size = new System.Drawing.Size(260, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Lista das Vendas";
-            // 
-            // listVenda
-            // 
-            this.listVenda.FormattingEnabled = true;
-            this.listVenda.Location = new System.Drawing.Point(26, 96);
-            this.listVenda.Name = "listVenda";
-            this.listVenda.Size = new System.Drawing.Size(748, 212);
-            this.listVenda.TabIndex = 1;
             // 
             // valorTotVendas
             // 
@@ -89,17 +81,27 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Numero total de vendas:";
             // 
+            // listVenda
+            // 
+            this.listVenda.HideSelection = false;
+            this.listVenda.Location = new System.Drawing.Point(23, 89);
+            this.listVenda.Name = "listVenda";
+            this.listVenda.Size = new System.Drawing.Size(756, 219);
+            this.listVenda.TabIndex = 6;
+            this.listVenda.UseCompatibleStateImageBehavior = false;
+            this.listVenda.SelectedIndexChanged += new System.EventHandler(this.listVenda_SelectedIndexChanged_1);
+            // 
             // ListVendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listVenda);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.totVendas);
             this.Controls.Add(this.valorTotVendas);
-            this.Controls.Add(this.listVenda);
             this.Controls.Add(this.label1);
             this.Name = "ListVendas";
             this.Text = "Lista de Vendas";
@@ -111,10 +113,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listVenda;
         private System.Windows.Forms.TextBox valorTotVendas;
         private System.Windows.Forms.TextBox totVendas;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListView listVenda;
     }
 }
