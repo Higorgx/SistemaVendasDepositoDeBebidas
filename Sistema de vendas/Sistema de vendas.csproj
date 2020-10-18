@@ -105,6 +105,7 @@
     <Compile Include="Modelos\Clientes.cs" />
     <Compile Include="Modelos\Fornecedor.cs" />
     <Compile Include="Modelos\Produto.cs" />
+    <Compile Include="Modelos\ProdutoCerto.cs" />
     <Compile Include="Modelos\Usuario.cs" />
     <Compile Include="Modelos\Vendas.cs" />
     <Compile Include="Telas\AnaComercial.cs">

@@ -15,7 +15,7 @@ namespace Sistema_de_vendas.Telas
     public partial class frmVendas : Form
     {
         List<Clientes> Clientes = new List<Clientes>();
-        List<Produto> Produtos = new List<Produto>();
+        List<ProdutoCerto> Produtos = new List<ProdutoCerto>();
 
         public frmVendas()
         {
@@ -54,11 +54,11 @@ namespace Sistema_de_vendas.Telas
             {
                 cmbCliente.Items.Add(Clientes[i].nome);
             }
-            /*Produtos = ProdutosDao.retornarTudo();
+            Produtos = ProdutosDao.retornarTudo();
             for (int i = 0; i < Produtos.Count; i++)
             {
                 cmbProduto.Items.Add(Produtos[i].descr);
-            }*/
+            }
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -83,18 +83,20 @@ namespace Sistema_de_vendas.Telas
                 if (Produtos[i].Id == Convert.ToInt32(txtIdproduto.Text))
                 {
                     cmbProduto.SelectedIndex = i;
+                    txtValorProduto.Text = Produtos[i].Valunit.ToString();
                 }
             }
         }
 
         private void cmbProduto_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtIdproduto.Text = cmbProduto.SelectedIndex.ToString();
+            txtIdproduto.Text = Produtos[cmbProduto.SelectedIndex].Id.ToString();
+            txtValorProduto.Text = Produtos[cmbProduto.SelectedIndex].Valunit.ToString();
         }
 
         private void cmbCliente_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //txtIdcliente.Text = cmbCliente.SelectedIndex.ToString();
+            txtIdcliente.Text = Clientes[cmbCliente.SelectedIndex].idcliente.ToString();
         }
 
         private void txtIdcliente_TextChanged(object sender, EventArgs e)
