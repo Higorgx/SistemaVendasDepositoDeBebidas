@@ -48,7 +48,7 @@ namespace Sistema_de_vendas
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new HistoricoDeVendas().ShowDialog();
+            new ListVendas().ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)

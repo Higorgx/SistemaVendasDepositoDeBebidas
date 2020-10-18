@@ -52,7 +52,7 @@ namespace Sistema_de_vendas.Telas
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FornecedorDao.deletar(lista.SelectedItem.ToString());
+            FornecedorDao.deletar($" cnpj = '{lista.SelectedItem.ToString()}'");
             recarregarLista();
         }
 

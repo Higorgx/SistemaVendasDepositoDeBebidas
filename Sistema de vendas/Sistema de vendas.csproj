@@ -143,12 +143,6 @@
     <Compile Include="Telas\frmVendas.Designer.cs">
       <DependentUpon>frmVendas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\HistoricoDeVendas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\HistoricoDeVendas.Designer.cs">
-      <DependentUpon>HistoricoDeVendas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\ListClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,9 +202,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\frmVendas.resx">
       <DependentUpon>frmVendas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\HistoricoDeVendas.resx">
-      <DependentUpon>HistoricoDeVendas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\ListClientes.resx">
       <DependentUpon>ListClientes.cs</DependentUpon>
