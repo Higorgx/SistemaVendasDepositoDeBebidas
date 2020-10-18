@@ -82,5 +82,13 @@ namespace Sistema_de_vendas
         {
             new AnaComercial().ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmVendas frmVendas = new frmVendas();
+
+            frmVendas.ShowDialog();
+
+        }
     }
 }
