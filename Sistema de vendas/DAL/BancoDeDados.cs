@@ -9,7 +9,7 @@ namespace Sistema_de_vendas.DAL
 {
     class BancoDeDados
     {
-        static string credenciais = "Server=127.0.0.1;Database=sys_vendas;Uid=root;Pwd=";
+        static string credenciais = "Server=127.0.0.1;Database=sys_vendas;Uid=root;Pwd=; convert zero datetime=True;";
         static MySqlConnection conexão = null;
 
         public static MySqlConnection Conexão

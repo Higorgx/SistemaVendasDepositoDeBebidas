@@ -30,8 +30,6 @@
         {
             this.btnSalvar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtIdvenda = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -43,19 +41,19 @@
             this.cmbSatus = new System.Windows.Forms.ComboBox();
             this.txtVencimento = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbCliente = new System.Windows.Forms.ComboBox();
             this.btnBuscarCliente = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btncCalcularValor = new System.Windows.Forms.Button();
+            this.cmbProduto = new System.Windows.Forms.ComboBox();
+            this.txtValorProduto = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnBuscarProduto = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.txtIdproduto = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cmbFormaPagamento = new System.Windows.Forms.ComboBox();
             this.txtValorfinal = new System.Windows.Forms.TextBox();
-            this.txtValorProduto = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btncCalcularValor = new System.Windows.Forms.Button();
-            this.cmbCliente = new System.Windows.Forms.ComboBox();
-            this.cmbProduto = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -79,23 +77,6 @@
             this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Código";
-            // 
-            // txtIdvenda
-            // 
-            this.txtIdvenda.Location = new System.Drawing.Point(90, 17);
-            this.txtIdvenda.Name = "txtIdvenda";
-            this.txtIdvenda.Size = new System.Drawing.Size(100, 20);
-            this.txtIdvenda.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "ID_Venda";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -194,6 +175,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cliente";
             // 
+            // cmbCliente
+            // 
+            this.cmbCliente.FormattingEnabled = true;
+            this.cmbCliente.Location = new System.Drawing.Point(190, 22);
+            this.cmbCliente.Name = "cmbCliente";
+            this.cmbCliente.Size = new System.Drawing.Size(233, 21);
+            this.cmbCliente.TabIndex = 19;
+            this.cmbCliente.SelectedIndexChanged += new System.EventHandler(this.cmbCliente_SelectedIndexChanged);
+            // 
             // btnBuscarCliente
             // 
             this.btnBuscarCliente.Location = new System.Drawing.Point(429, 20);
@@ -220,6 +210,41 @@
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Produto";
+            // 
+            // btncCalcularValor
+            // 
+            this.btncCalcularValor.Location = new System.Drawing.Point(354, 54);
+            this.btncCalcularValor.Name = "btncCalcularValor";
+            this.btncCalcularValor.Size = new System.Drawing.Size(113, 23);
+            this.btncCalcularValor.TabIndex = 18;
+            this.btncCalcularValor.Text = "Calcular Valor";
+            this.btncCalcularValor.UseVisualStyleBackColor = true;
+            this.btncCalcularValor.Click += new System.EventHandler(this.btncCalcularValor_Click);
+            // 
+            // cmbProduto
+            // 
+            this.cmbProduto.FormattingEnabled = true;
+            this.cmbProduto.Location = new System.Drawing.Point(190, 22);
+            this.cmbProduto.Name = "cmbProduto";
+            this.cmbProduto.Size = new System.Drawing.Size(233, 21);
+            this.cmbProduto.TabIndex = 20;
+            this.cmbProduto.SelectedIndexChanged += new System.EventHandler(this.cmbProduto_SelectedIndexChanged);
+            // 
+            // txtValorProduto
+            // 
+            this.txtValorProduto.Location = new System.Drawing.Point(224, 56);
+            this.txtValorProduto.Name = "txtValorProduto";
+            this.txtValorProduto.Size = new System.Drawing.Size(100, 20);
+            this.txtValorProduto.TabIndex = 20;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(187, 59);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Valor";
             // 
             // btnBuscarProduto
             // 
@@ -280,50 +305,6 @@
             this.txtValorfinal.Size = new System.Drawing.Size(100, 20);
             this.txtValorfinal.TabIndex = 14;
             // 
-            // txtValorProduto
-            // 
-            this.txtValorProduto.Location = new System.Drawing.Point(224, 56);
-            this.txtValorProduto.Name = "txtValorProduto";
-            this.txtValorProduto.Size = new System.Drawing.Size(100, 20);
-            this.txtValorProduto.TabIndex = 20;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(187, 59);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Valor";
-            // 
-            // btncCalcularValor
-            // 
-            this.btncCalcularValor.Location = new System.Drawing.Point(354, 54);
-            this.btncCalcularValor.Name = "btncCalcularValor";
-            this.btncCalcularValor.Size = new System.Drawing.Size(113, 23);
-            this.btncCalcularValor.TabIndex = 18;
-            this.btncCalcularValor.Text = "Calcular Valor";
-            this.btncCalcularValor.UseVisualStyleBackColor = true;
-            this.btncCalcularValor.Click += new System.EventHandler(this.btncCalcularValor_Click);
-            // 
-            // cmbCliente
-            // 
-            this.cmbCliente.FormattingEnabled = true;
-            this.cmbCliente.Location = new System.Drawing.Point(190, 22);
-            this.cmbCliente.Name = "cmbCliente";
-            this.cmbCliente.Size = new System.Drawing.Size(233, 21);
-            this.cmbCliente.TabIndex = 19;
-            this.cmbCliente.SelectedIndexChanged += new System.EventHandler(this.cmbCliente_SelectedIndexChanged);
-            // 
-            // cmbProduto
-            // 
-            this.cmbProduto.FormattingEnabled = true;
-            this.cmbProduto.Location = new System.Drawing.Point(190, 22);
-            this.cmbProduto.Name = "cmbProduto";
-            this.cmbProduto.Size = new System.Drawing.Size(233, 21);
-            this.cmbProduto.TabIndex = 20;
-            this.cmbProduto.SelectedIndexChanged += new System.EventHandler(this.cmbProduto_SelectedIndexChanged);
-            // 
             // frmVendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -333,8 +314,6 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtIdvenda);
             this.Controls.Add(this.btnSalvar);
             this.Name = "frmVendas";
             this.Text = "frmVendas";
@@ -354,8 +333,6 @@
 
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtIdvenda;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;

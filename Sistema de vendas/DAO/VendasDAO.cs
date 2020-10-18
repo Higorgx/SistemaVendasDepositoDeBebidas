@@ -54,7 +54,7 @@ namespace Sistema_de_vendas.DAO
                 ven.quantidade = Convert.ToInt32(resultado.GetString(3));
                 ven.data_compra = Convert.ToDateTime(resultado.GetString(4));
                 ven.formaPagamento = resultado.GetString(5);
-                ven.Vencimento = Convert.ToDateTime(resultado.GetString(6));
+                ven.Vencimento = resultado.GetDateTime(6);
                 ven.StatusVenda = resultado.GetString(7);
                 ven.Valor = Convert.ToInt32(resultado.GetString(8));
                 vendas.Add(ven);
@@ -73,7 +73,7 @@ namespace Sistema_de_vendas.DAO
 
             // criação do comando sql
             comando.CommandText = $"CREATE TABLE {nomeTabela} (" +
-                                  "idvendas int(11) AI PK," +
+                                  "idvendas int(11) AUTO_INCREMENT PRIMARY KEY," +
                                   "id_cliente int(11)," +
                                   "id_produto int(11)," +
                                   "quantidade int(11)," +
@@ -114,7 +114,7 @@ namespace Sistema_de_vendas.DAO
                 ven.quantidade = Convert.ToInt32(resultado.GetString(3));
                 ven.data_compra = Convert.ToDateTime(resultado.GetString(4));
                 ven.formaPagamento = resultado.GetString(5);
-                ven.Vencimento = Convert.ToDateTime(resultado.GetString(6));
+                ven.Vencimento = resultado.GetDateTime(6);
                 ven.StatusVenda = resultado.GetString(7);
                 ven.Valor = Convert.ToInt32(resultado.GetString(8));
                 vendas.Add(ven);
