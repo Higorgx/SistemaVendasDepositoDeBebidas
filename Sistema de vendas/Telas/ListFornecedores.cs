@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Sistema_de_vendas.DAO;
+using Sistema_de_vendas.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,14 @@ namespace Sistema_de_vendas.Telas
         public ListFornecedores()
         {
             InitializeComponent();
+
+            var items = new RelatorioFornecedor();
+
+            //Listando os itens que estão sendo retornados na lista do RelatórioFornecedor
+            foreach(var fornecedor in items.mostrarLista())
+            {
+                listFornecedor.Items.Add(fornecedor);
+            }
         }
 
         private void listFornecedor_SelectedIndexChanged(object sender, EventArgs e)

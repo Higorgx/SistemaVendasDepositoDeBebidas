@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Sistema_de_vendas.Telas
 {
-    public partial class ListClientes : Form
+    public partial class HistoricoDeVendas : Form
     {
-        public ListClientes()
+        public HistoricoDeVendas()
         {
             InitializeComponent();
-        }
-
-        private void listCliente_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

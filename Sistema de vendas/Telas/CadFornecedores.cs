@@ -80,5 +80,10 @@ namespace Sistema_de_vendas.Telas
             if (MessageBox.Show("Deseja Fechar?", "Fechar", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
                 this.Close();
         }
+
+        private void lista_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
