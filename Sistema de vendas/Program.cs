@@ -20,15 +20,12 @@ namespace Sistema_de_vendas
             ProdutosDao.resetarTabela();
             UsuarioDao.resetarTabela();
             FornecedorDao.resetarTabela();
+            VendasDAO.resetarTabela();
 
             FornecedorDao.criarTabela();
             UsuarioDao.criarTabela();
             ProdutosDao.criarTabela();
-
-            try
-            {
-                VendasDAO.criarTabela();
-            } catch { }
+            VendasDAO.criarTabela();
 
             UsuarioDao.salvar(new Usuario("admin", "admin"));
 

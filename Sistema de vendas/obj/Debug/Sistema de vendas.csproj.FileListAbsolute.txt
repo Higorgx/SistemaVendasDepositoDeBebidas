@@ -41,3 +41,5 @@ C:\Users\Mateus Alcântara\source\repos\Higorgx\SistemaVendasDepositoDeBebidas\S
 C:\Users\Mateus Alcântara\source\repos\Higorgx\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema de vendas.csproj.CopyComplete
 C:\Users\Mateus Alcântara\source\repos\Higorgx\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema de vendas.exe
 C:\Users\Mateus Alcântara\source\repos\Higorgx\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema de vendas.pdb
+C:\Users\Mateus Alcântara\source\repos\Higorgx\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema_de_vendas.Telas.frmCadastroPendencia.resources
+C:\Users\Mateus Alcântara\source\repos\Higorgx\SistemaVendasDepositoDeBebidas\Sistema de vendas\obj\Debug\Sistema_de_vendas.Telas.frmCliente.resources

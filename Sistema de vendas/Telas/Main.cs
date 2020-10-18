@@ -103,5 +103,18 @@ namespace Sistema_de_vendas
             frmVendas.ShowDialog();
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            frmCadastroPendencia frmCadastroPendencia = new frmCadastroPendencia();
+
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            frmCliente frmCliente = new frmCliente();
+            frmCliente.ShowDialog();
+        }
     }
 }

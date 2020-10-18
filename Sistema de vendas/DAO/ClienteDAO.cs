@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Sistema_de_vendas.DAO
 {
-    class VendasDAO : Dao
+    class ClienteDAO : Dao
     {
-        private static string nomeTabela = "vendas";
+        private static string nomeTabela = "cliente";
 
         public static void resetarTabela()
         {
@@ -26,7 +26,7 @@ namespace Sistema_de_vendas.DAO
             comando.Dispose();
         }
 
-        public static List<Vendas> buscar(string condições)
+        public static List<Clientes> buscar(string condições)
         {
             //abertura do comando sql
             var comando = conexão.CreateCommand();
@@ -42,28 +42,25 @@ namespace Sistema_de_vendas.DAO
             //destruindo objetos inuteis
             comando.Dispose();
 
-            List<Vendas> vendas = new List<Vendas>();
+            List<Clientes> clienteLista = new List<Clientes>();
 
             // adicionando dados da consulta a lista
             while (resultado.Read())
             {
-                Vendas ven = new Vendas();
-                ven.idvendas = Convert.ToInt32(resultado.GetString(0));
-                ven.id_cliente = Convert.ToInt32(resultado.GetString(1));
-                ven.id_produto = Convert.ToInt32(resultado.GetString(2));
-                ven.quantidade = Convert.ToInt32(resultado.GetString(3));
-                ven.data_compra = Convert.ToDateTime(resultado.GetString(4));
-                ven.formaPagamento = resultado.GetString(5);
-                ven.Vencimento = Convert.ToDateTime(resultado.GetString(6));
-                ven.StatusVenda = resultado.GetString(7);
-                ven.Valor = Convert.ToInt32(resultado.GetString(8));
-                vendas.Add(ven);
+                Clientes cliente = new Clientes();
+                cliente.idcliente = Convert.ToInt32(resultado.GetString(0));
+                cliente.nome = (resultado.GetString(1));
+                cliente.rg = (resultado.GetString(2));
+                cliente.cpf = (resultado.GetString(3));
+                cliente.endereço = (resultado.GetString(4));
+                cliente.telefone = resultado.GetString(5);
+                clienteLista.Add(cliente);
             }
 
             // destruindo objeto inutilizado 
             resultado.Dispose();
 
-            return vendas;
+            return clienteLista;
         }
 
         public static void criarTabela()
@@ -72,18 +69,15 @@ namespace Sistema_de_vendas.DAO
             var comando = conexão.CreateCommand();
 
             // criação do comando sql
-            comando.CommandText = $"CREATE TABLE {nomeTabela} (" +
-                                  "idvendas INT NOT NULL AUTO_INCREMENT," +
-                                  "id_cliente int(11)," +
-                                  "id_produto int(11)," +
-                                  "quantidade int(11)," +
-                                  "data_compra datetime," +
-                                  "formaPagamento varchar(45)," +
-                                  "Vencimento datetime," +
-                                  "StatusVenda varchar(45)," +
-                                  "Valor float," +
-                                  "PRIMARY KEY (`idvendas`)" +
-                                  ")";
+            comando.CommandText = $"INSERT INTO {nomeTabela} CREATE TABLE `sys_vendas`.`cliente` (" +
+                                  "`idcliente` INT NOT NULL AUTO_INCREMENT," +
+                                  "`nome` VARCHAR(45) NULL," +
+                                  "`rg` VARCHAR(45) NULL," +
+                                  "`cpf` VARCHAR(45) NULL," +
+                                  "`endereço` VARCHAR(45) NULL," +
+                                  "`telefone` VARCHAR(45) NULL," +
+                                  "PRIMARY KEY(`idcliente`));'";
+
 
             // execução do comando
             comando.ExecuteNonQuery();
@@ -92,7 +86,7 @@ namespace Sistema_de_vendas.DAO
             comando.Dispose();
         }
 
-        public static List<Vendas> retornarTudo()
+        public static List<Clientes> retornarTudo()
         {
             //abertura do comando sql
             var comando = conexão.CreateCommand();
@@ -103,38 +97,35 @@ namespace Sistema_de_vendas.DAO
             // execução do comando
             var resultado = comando.ExecuteReader();
 
-            List<Vendas> vendas = new List<Vendas>();
+            List<Clientes> clienteLista = new List<Clientes>();
 
             // adicionando dados da consulta a lista
             while (resultado.Read())
             {
-                Vendas ven = new Vendas();
-                ven.idvendas = Convert.ToInt32(resultado.GetString(0));
-                ven.id_cliente = Convert.ToInt32(resultado.GetString(1));
-                ven.id_produto = Convert.ToInt32(resultado.GetString(2));
-                ven.quantidade = Convert.ToInt32(resultado.GetString(3));
-                ven.data_compra = Convert.ToDateTime(resultado.GetString(4));
-                ven.formaPagamento = resultado.GetString(5);
-                ven.Vencimento = Convert.ToDateTime(resultado.GetString(6));
-                ven.StatusVenda = resultado.GetString(7);
-                ven.Valor = Convert.ToInt32(resultado.GetString(8));
-                vendas.Add(ven);
+                Clientes cliente = new Clientes();
+                cliente.idcliente = Convert.ToInt32(resultado.GetString(0));
+                cliente.nome = (resultado.GetString(1));
+                cliente.rg = (resultado.GetString(2));
+                cliente.cpf = (resultado.GetString(3));
+                cliente.endereço = (resultado.GetString(4));
+                cliente.telefone = resultado.GetString(5);
+                clienteLista.Add(cliente);
             }
 
             // distruição de objetos não utilizadoss
             comando.Dispose();
             resultado.Dispose();
 
-            return vendas;
+            return clienteLista;
         }
 
-        public static void salvar(Vendas venda)
+        public static void salvar(Clientes cliente)
         {
             //abertura do comando sql
             var comando = conexão.CreateCommand();
 
             // criação do comando sql
-            comando.CommandText = $"INSERT INTO {nomeTabela}(id_cliente,id_produto,quantidade,data_compra,formaPagamento,Vencimento,StatusVenda,Valor) values({venda.id_cliente},{venda.id_produto},{venda.quantidade},'{venda.data_compra}','{venda.formaPagamento}','{venda.Vencimento}','{venda.StatusVenda}',{venda.Valor})";
+            comando.CommandText = $"INSERT INTO {nomeTabela}(nome,rg,cpf,endereço,telefone) values('{cliente.nome}','{cliente.rg}','{cliente.cpf}','{cliente.endereço}','{cliente.telefone}')";
 
             // execução do comando
             comando.ExecuteNonQuery();

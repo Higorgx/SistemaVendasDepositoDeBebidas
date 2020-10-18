@@ -14,7 +14,7 @@ namespace Sistema_de_vendas.Telas
 {
     public partial class frmVendas : Form
     {
-        //List<Cliente> Cliente = new List<Cliente>();
+        List<Clientes> Clientes = new List<Clientes>();
         List<Produto> Produtos = new List<Produto>();
 
         public frmVendas()
@@ -49,11 +49,11 @@ namespace Sistema_de_vendas.Telas
             cmbFormaPagamento.Items.Add("Cheque");
             cmbSatus.Items.Add("Pago");
             cmbSatus.Items.Add("A pagar");
-            /*Produtos = ProdutosDao.retornarTudo();
+            Clientes = ClienteDAO.retornarTudo();
             for (int i = 0; i < Clientes.Count; i++)
             {
                 cmbCliente.Items.Add(Clientes[i].nome);
-            }*/
+            }
             /*Produtos = ProdutosDao.retornarTudo();
             for (int i = 0; i < Produtos.Count; i++)
             {
@@ -94,7 +94,18 @@ namespace Sistema_de_vendas.Telas
 
         private void cmbCliente_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtIdcliente.Text = cmbCliente.SelectedIndex.ToString();
+            //txtIdcliente.Text = cmbCliente.SelectedIndex.ToString();
+        }
+
+        private void txtIdcliente_TextChanged(object sender, EventArgs e)
+        {
+            for (int i = 0; i < Clientes.Count; i++)
+            {
+                if (Clientes[i].idcliente == Convert.ToInt32(txtIdcliente.Text))
+                {
+                    cmbCliente.SelectedIndex = i;
+                }
+            }
         }
     }
 }
