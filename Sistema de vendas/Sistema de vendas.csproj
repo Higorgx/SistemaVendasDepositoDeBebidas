@@ -94,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\Relatorio.cs" />
+    <Compile Include="Class\RelatorioCliente.cs" />
     <Compile Include="Class\RelatorioFornecedor.cs" />
     <Compile Include="DAL\BancoDeDados.cs" />
     <Compile Include="DAO\ClienteDAO.cs" />

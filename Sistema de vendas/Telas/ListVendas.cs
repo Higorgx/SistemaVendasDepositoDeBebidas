@@ -51,5 +51,10 @@ namespace Sistema_de_vendas.Telas
         {
 
         }
+
+        private void listVenda_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

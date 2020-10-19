@@ -54,6 +54,7 @@
             // 
             // valorTotVendas
             // 
+            this.valorTotVendas.Enabled = false;
             this.valorTotVendas.Location = new System.Drawing.Point(439, 327);
             this.valorTotVendas.Name = "valorTotVendas";
             this.valorTotVendas.Size = new System.Drawing.Size(106, 20);
@@ -61,6 +62,7 @@
             // 
             // totVendas
             // 
+            this.totVendas.Enabled = false;
             this.totVendas.Location = new System.Drawing.Point(439, 390);
             this.totVendas.Name = "totVendas";
             this.totVendas.Size = new System.Drawing.Size(106, 20);
@@ -100,6 +102,7 @@
             this.listVenda.Name = "listVenda";
             this.listVenda.Size = new System.Drawing.Size(541, 244);
             this.listVenda.TabIndex = 6;
+            this.listVenda.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.listVenda_CellContentClick);
             // 
             // Cliente
             // 
