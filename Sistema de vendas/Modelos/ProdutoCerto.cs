@@ -12,8 +12,8 @@ namespace Sistema_de_vendas.Modelos
         public string nome { get; set; }
         public string descr { get; set; }
         public string marca { get; set; }
-        public int Qntde { get; set; }
-        public int Valunit { get; set; }
+        public string Qntde { get; set; }
+        public string Valunit { get; set; }
         
     }
 

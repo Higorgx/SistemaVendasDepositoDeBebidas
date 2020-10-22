@@ -74,7 +74,7 @@ namespace Sistema_de_vendas.DAO
                                   "descr varchar(60) not null," +
                                   "marca varchar(60) not null," +
                                   "valunit varchar(60) not null," +
-                                  "quantde varchar(250) not null" +
+                                  "Qntde varchar(250) not null" +
                                   ")";
 
             // execução do comando
@@ -113,8 +113,8 @@ namespace Sistema_de_vendas.DAO
                 Prod.nome = resultado.GetString(1);
                 Prod.descr = resultado.GetString(2);
                 Prod.marca = resultado.GetString(3);
-                Prod.Valunit = Convert.ToInt32(resultado.GetString(4));
-                Prod.Qntde = Convert.ToInt32(resultado.GetString(5));
+                Prod.Valunit = resultado.GetString(4); ;
+                Prod.Qntde = resultado.GetString(5);
 
                 ListaProdutos.Add(Prod);
 
@@ -133,7 +133,7 @@ namespace Sistema_de_vendas.DAO
             var comando = conexão.CreateCommand();
 
             // criação do comando sql
-            comando.CommandText = $"INSERT INTO {nomeTabela}(login, senha) values('{produto.Id}','{produto.nome}','{produto.descr}','{produto.marca}','{produto.Valunit}','{produto.Qntde}')";
+            comando.CommandText = $"INSERT INTO {nomeTabela}( nome, descr, marca, Valunit, Qntde) values('{produto.nome}','{produto.descr}','{produto.marca}','{produto.Valunit}','{produto.Qntde}')";
 
             // execução do comando
             comando.ExecuteNonQuery();

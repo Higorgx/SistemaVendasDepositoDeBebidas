@@ -55,7 +55,7 @@ namespace Sistema_de_vendas.Telas
             foreach (var estoque in estoques)
             {
                 
-                listEstoque.Rows.Add(estoque.Id, estoque.descr, estoque.nome, estoque.marca, estoque.Valunit, estoque.Qntde);
+                listEstoque.Rows.Add( estoque.descr, estoque.nome, estoque.marca, estoque.Valunit, estoque.Qntde);
             }
         }
 
@@ -66,10 +66,9 @@ namespace Sistema_de_vendas.Telas
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            /*if( txt_id != null )
-                { int ids = Convert.ToInt32(txt_id.Text);
+            
 
-                Produto produto = new Produto(ids, txt_Desc.Text, txt_Nome.Text, txt_Marca.Text, txt_Valunit.Text, txt_Qntde.Text);
+                Produto produto = new Produto( txt_Desc.Text, txt_Nome.Text, txt_Marca.Text, txt_Valunit.Text, txt_Qntde.Text);
                 if (produto.validar())
                 {
                     ProdutosDao.salvar(produto);
@@ -80,13 +79,8 @@ namespace Sistema_de_vendas.Telas
                 {
                     MessageBox.Show("Falha ao registrar fornecedor... Verifique os dados no formulário!");
                 }
-            }
-            else
-            {
-                MessageBox.Show("id invalido");
-            }
             
-            */
+            
 
            
             
@@ -109,7 +103,7 @@ namespace Sistema_de_vendas.Telas
             foreach (var estoque in estoques)
             {
 
-                listEstoque.Rows.Add(estoque.Id, estoque.descr, estoque.nome, estoque.marca, estoque.Valunit, estoque.Qntde);
+                listEstoque.Rows.Add( estoque.descr, estoque.nome, estoque.marca, estoque.Valunit, estoque.Qntde);
             }
         }
     }

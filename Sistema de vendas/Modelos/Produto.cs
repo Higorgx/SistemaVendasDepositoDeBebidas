@@ -8,7 +8,7 @@ namespace Sistema_de_vendas.Modelos
 {
     class Produto
     {
-        private int id;
+     
         private string Nome;
         private string Descr;
         private string Marca;
@@ -16,18 +16,9 @@ namespace Sistema_de_vendas.Modelos
         private string ValUnit;
 
 
-        public Produto(string descr,string nome, string marca, string qntde, string valunit)
+        public Produto( string descr, string nome, string marca, string qntde, string valunit)
         {
-            this.Descr = descr;
-            this.Nome = nome;
-            this.Marca = marca;
-            this.Qntde = qntde;
-            this.ValUnit = valunit;
-        }
-
-        public Produto(int id, string descr, string nome, string marca, string qntde, string valunit)
-        {
-            this.id = id;
+           
             this.Descr = descr;
             this.nome = nome;
             this.marca = marca;
@@ -37,7 +28,7 @@ namespace Sistema_de_vendas.Modelos
 
         public Produto() { }
 
-        public int Id { get; set; }
+      
         public string nome { get; set; }
         public string descr { get; set; }
         public string marca { get; set; }
@@ -46,7 +37,7 @@ namespace Sistema_de_vendas.Modelos
 
         public bool validar()
         {
-            return this.id != null && this.nome != "" && this.Descr != "" && this.marca != "" && this.qntde != "" && this.Valunit != "";
+            return  this.nome != "" && this.Descr != "" && this.marca != "" && this.qntde != "" && this.Valunit != "";
         }
     }
 }
