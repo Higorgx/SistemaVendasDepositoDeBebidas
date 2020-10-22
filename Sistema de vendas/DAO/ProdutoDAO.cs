@@ -70,6 +70,7 @@ namespace Sistema_de_vendas.DAO
             comando.CommandText = $"CREATE TABLE {nomeTabela}" +
                                   "(" +
                                   "id int AUTO_INCREMENT PRIMARY KEY," +
+                                  "nome varchar(100) not null," +
                                   "descr varchar(60) not null," +
                                   "marca varchar(60) not null," +
                                   "valunit varchar(60) not null," +
@@ -109,10 +110,11 @@ namespace Sistema_de_vendas.DAO
 
                 ProdutoCerto Prod = new ProdutoCerto();
                 Prod.Id = Convert.ToInt32(resultado.GetString(0));
-                Prod.descr = resultado.GetString(1);
-                Prod.marca = resultado.GetString(2);
-                Prod.Valunit = Convert.ToInt32(resultado.GetString(3));
-                Prod.Qntde = Convert.ToInt32(resultado.GetString(4));
+                Prod.nome = resultado.GetString(1);
+                Prod.descr = resultado.GetString(2);
+                Prod.marca = resultado.GetString(3);
+                Prod.Valunit = Convert.ToInt32(resultado.GetString(4));
+                Prod.Qntde = Convert.ToInt32(resultado.GetString(5));
 
                 ListaProdutos.Add(Prod);
 
@@ -125,13 +127,13 @@ namespace Sistema_de_vendas.DAO
             return ListaProdutos;
         }
 
-        public static void salvar(Usuario usuario)
+        public static void salvar(Produto produto)
         {
             //abertura do comando sql
             var comando = conexão.CreateCommand();
 
             // criação do comando sql
-            comando.CommandText = $"INSERT INTO {nomeTabela}(login, senha) values('{usuario.Login}','{usuario.Senha}')";
+            comando.CommandText = $"INSERT INTO {nomeTabela}(login, senha) values('{produto.Id}','{produto.nome}','{produto.descr}','{produto.marca}','{produto.Valunit}','{produto.Qntde}')";
 
             // execução do comando
             comando.ExecuteNonQuery();

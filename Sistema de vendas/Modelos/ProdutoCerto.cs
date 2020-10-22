@@ -8,10 +8,14 @@ namespace Sistema_de_vendas.Modelos
 {
     class ProdutoCerto
     {
+        public int Id { get; set; }
+        public string nome { get; set; }
         public string descr { get; set; }
         public string marca { get; set; }
         public int Qntde { get; set; }
         public int Valunit { get; set; }
-        public int Id { get; set; }
+        
     }
+
 }
+
