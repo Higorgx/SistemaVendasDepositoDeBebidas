@@ -96,17 +96,20 @@
     <Compile Include="Class\Relatorio.cs" />
     <Compile Include="Class\RelatorioCliente.cs" />
     <Compile Include="Class\RelatorioFornecedor.cs" />
+    <Compile Include="Class\RelatorioPendencias.cs" />
     <Compile Include="DAL\BancoDeDados.cs" />
     <Compile Include="DAO\ClienteDAO.cs" />
     <Compile Include="DAO\Dao.cs" />
     <Compile Include="DAO\FornecedorDao.cs" />
     <Compile Include="DAO\ProdutoDAO.cs" />
+    <Compile Include="DAO\RastreioDAO.cs" />
     <Compile Include="DAO\UsuarioDao.cs" />
     <Compile Include="DAO\VendasDAO.cs" />
     <Compile Include="Modelos\Clientes.cs" />
     <Compile Include="Modelos\Fornecedor.cs" />
     <Compile Include="Modelos\Produto.cs" />
     <Compile Include="Modelos\ProdutoCerto.cs" />
+    <Compile Include="Modelos\Rastreio.cs" />
     <Compile Include="Modelos\Usuario.cs" />
     <Compile Include="Modelos\Vendas.cs" />
     <Compile Include="Telas\AnaComercial.cs">
@@ -177,6 +180,18 @@
     <Compile Include="Telas\Cad.Designer.cs">
       <DependentUpon>Cad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\PendenciasFinanceiras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\PendenciasFinanceiras.Designer.cs">
+      <DependentUpon>PendenciasFinanceiras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Rastreio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Rastreio.Designer.cs">
+      <DependentUpon>Rastreio.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -219,6 +234,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Cad.resx">
       <DependentUpon>Cad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\PendenciasFinanceiras.resx">
+      <DependentUpon>PendenciasFinanceiras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Rastreio.resx">
+      <DependentUpon>Rastreio.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

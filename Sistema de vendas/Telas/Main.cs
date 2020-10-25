@@ -87,7 +87,7 @@ namespace Sistema_de_vendas
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            new Sistema_de_vendas.Telas.Rastreio().ShowDialog();
         }
 
         /* Chama tela para Análise Comercial */
@@ -106,8 +106,7 @@ namespace Sistema_de_vendas
 
         private void button5_Click(object sender, EventArgs e)
         {
-            frmCadastroPendencia frmCadastroPendencia = new frmCadastroPendencia();
-
+            new PendenciasFinanceiras().ShowDialog();
 
         }
 
