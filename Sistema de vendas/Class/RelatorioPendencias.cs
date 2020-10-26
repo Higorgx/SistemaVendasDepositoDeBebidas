@@ -10,23 +10,24 @@ namespace Sistema_de_vendas.Class
 {
     class RelatorioPendencias : Relatorio
     {
-        public override List<ListViewItem> mostrarLista()
+        public List<ListViewItem> dados { get; set; } = new List<ListViewItem>();
+
+        public override void mostrarLista()
         {
-            var vendas = VendasDAO.buscar("StatusVenda = 'pago'");
+            var vendas = VendasDAO.buscarNomeCliente("StatusVenda = 'A pagar'");
+
             int i = 1;
-            List<ListViewItem> list = new List<ListViewItem>();
+
             foreach (var venda in vendas)
             {
                 ListViewItem item = new ListViewItem(i++.ToString());
-                item.SubItems.Add(venda.idvendas.ToString());
+                //item.SubItems.Add(venda.idvendas.ToString());
                 item.SubItems.Add(venda.quantidade.ToString());
                 item.SubItems.Add(venda.data_compra.ToString());
                 item.SubItems.Add(venda.Vencimento.ToString());
-                item.SubItems.Add(venda.formaPagamento);
-                list.Add(item);
+                item.SubItems.Add(venda.Nome.ToString());
+                dados.Add(item);
             }
-            //Retorna a lista dos itens resgatados do banco
-            return list;
         }
     }
 }

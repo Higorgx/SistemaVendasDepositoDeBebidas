@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Sistema_de_vendas.DAO
 {
@@ -24,6 +25,46 @@ namespace Sistema_de_vendas.DAO
 
             //excluindo objetos sem uso
             comando.Dispose();
+        }
+
+        public static List<Vendas> buscarNomeCliente(string condicoes)
+        {
+            //abertura do comando sql
+            var comando = conexão.CreateCommand();
+
+            var sql = $"SELECT vendas.quantidade, vendas.data_compra, vendas.formaPagamento, vendas.Vencimento, cliente.nome " +
+                      $"FROM {nomeTabela} " +
+                      $"join cliente " +
+                      $"on vendas.id_cliente = cliente.idcliente "+
+                      $"WHERE {condicoes}";
+
+            // criação do comando sql
+            comando.CommandText = sql;
+
+            // executando comando
+            var resultado = comando.ExecuteReader();
+
+            //destruindo objetos inuteis
+            comando.Dispose();
+
+            List<Vendas> vendas = new List<Vendas>();
+
+            // adicionando dados da consulta a lista
+            while (resultado.Read())
+            {
+                Vendas ven = new Vendas();
+                ven.quantidade = Convert.ToInt32(resultado.GetString(0));
+                ven.data_compra = Convert.ToDateTime(resultado.GetString(1));
+                ven.formaPagamento = resultado.GetString(2);
+                ven.Vencimento = resultado.GetDateTime(3);
+                ven.Nome = resultado.GetString(4);
+                vendas.Add(ven);
+            }
+
+            // destruindo objeto inutilizado 
+            resultado.Dispose();
+
+            return vendas;
         }
 
         public static List<Vendas> buscar(string condições)

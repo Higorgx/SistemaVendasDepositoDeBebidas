@@ -15,12 +15,13 @@ namespace Sistema_de_vendas.Class
 
     public class RelatorioFornecedor : Relatorio
     {
+        public List<ListViewItem> dados { get; set; } = new List<ListViewItem>();
 
-        public override List<ListViewItem> mostrarLista()
+        public override void mostrarLista()
         {
             var fornecedores = FornecedorDao.retornarTudo();
             int i = 1;
-            List <ListViewItem> list = new List<ListViewItem>();
+
             foreach (var fornecedor in fornecedores)
             {
                 ListViewItem item = new ListViewItem(i++.ToString());
@@ -28,10 +29,8 @@ namespace Sistema_de_vendas.Class
                 item.SubItems.Add(fornecedor.Nome);
                 item.SubItems.Add(fornecedor.Endereço);
                 item.SubItems.Add(fornecedor.Ramo);
-                list.Add(item);
+                dados.Add(item);
             }
-            //Retorna a lista dos itens resgatados do banco
-            return list;
         }
     }
 }

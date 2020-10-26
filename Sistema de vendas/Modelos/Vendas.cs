@@ -18,5 +18,8 @@ namespace Sistema_de_vendas.Modelos
         public string StatusVenda { get; set; }
         public double Valor { get; set; }
 
+        // Nome do Cliente ao fazer o relacionamento de tabela no VendasDAO metodo buscarNomeCliente()
+        public string Nome { get; set; }
+
     }
 }

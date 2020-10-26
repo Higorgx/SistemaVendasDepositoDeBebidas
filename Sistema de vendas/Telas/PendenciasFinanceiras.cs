@@ -20,12 +20,18 @@ namespace Sistema_de_vendas.Telas
 
             var items = new RelatorioPendencias();
 
+            items.relatorio();
+
             //Listando os itens que estão sendo retornados na lista do RelatórioCliente
-            foreach (var venda in items.mostrarLista())
+            foreach (var venda in items.dados)
             {
                 listView1.Items.Add(venda);
             }
         }
 
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

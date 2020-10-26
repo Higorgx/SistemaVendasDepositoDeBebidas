@@ -20,8 +20,10 @@ namespace Sistema_de_vendas.Telas
 
             var items = new RelatorioCliente();
 
+            items.relatorio();
+
             //Listando os itens que estão sendo retornados na lista do RelatórioCliente
-            foreach (var cliente in items.mostrarLista())
+            foreach (var cliente in items.dados)
             {
                 listCliente.Items.Add(cliente);
             }

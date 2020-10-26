@@ -27,6 +27,6 @@ namespace Sistema_de_vendas.Class
          * distintos entre uma classe e outra, colocar como abstract, pois assim
          * sera implementado na propria classe dando um override
          */
-        public abstract List<ListViewItem> mostrarLista();
+        public abstract void mostrarLista();
     }
 }

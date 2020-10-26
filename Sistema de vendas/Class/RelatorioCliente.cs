@@ -10,14 +10,16 @@ namespace Sistema_de_vendas.Class
 {
     class RelatorioCliente : Relatorio
     {
+        public List<ListViewItem> dados { get; set; } = new List<ListViewItem>();
+
         /*
          * Classe em que implementa o esqueleto para executar os passos especificos
          */
-        public override List<ListViewItem> mostrarLista()
+        public override void mostrarLista()
         {
             var clientes = ClienteDAO.retornarTudo();
             int i = 1;
-            List<ListViewItem> list = new List<ListViewItem>();
+
             foreach (var cliente in clientes)
             {
                 ListViewItem item = new ListViewItem(i++.ToString());
@@ -26,10 +28,8 @@ namespace Sistema_de_vendas.Class
                 item.SubItems.Add(cliente.cpf);
                 item.SubItems.Add(cliente.endereço);
                 item.SubItems.Add(cliente.telefone);
-                list.Add(item);
+                dados.Add(item);
             }
-            //Retorna a lista dos itens resgatados do banco
-            return list;
         }
     }
 }

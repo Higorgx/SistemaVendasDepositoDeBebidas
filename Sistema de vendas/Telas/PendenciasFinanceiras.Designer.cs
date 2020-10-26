@@ -34,15 +34,16 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(318, 44);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(157, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 13);
+            this.label1.Size = new System.Drawing.Size(476, 36);
             this.label1.TabIndex = 1;
             this.label1.Text = "Lista de Pendencias Financeiras";
             // 
@@ -53,14 +54,15 @@
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
-            this.columnHeader5});
+            this.columnHeader6});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(45, 75);
+            this.listView1.Location = new System.Drawing.Point(12, 75);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(698, 363);
+            this.listView1.Size = new System.Drawing.Size(776, 363);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -69,28 +71,33 @@
             // columnHeader2
             // 
             this.columnHeader2.Text = "QTD";
+            this.columnHeader2.Width = 70;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Data";
+            this.columnHeader3.Width = 180;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Vencimento";
+            this.columnHeader4.Width = 180;
             // 
-            // columnHeader5
+            // columnHeader6
             // 
-            this.columnHeader5.Text = "Pagamento";
+            this.columnHeader6.Text = "Nome Cliente";
+            this.columnHeader6.Width = 200;
             // 
             // PendenciasFinanceiras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label1);
             this.Name = "PendenciasFinanceiras";
-            this.Text = "PendenciasFinanceiras";
+            this.Text = "Pendencias Financeiras";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,6 +110,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
     }
 }
